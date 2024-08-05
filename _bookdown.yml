@@ -1,0 +1,23 @@
+book_filename: "Course_Name"
+chapter_name: "Chapter "
+repo: https://github.com/C-MOOR/miniCURE-BioDIGS
+rmd_files: ["index.Rmd",
+            "introduction.Rmd",
+            "scientific-literature.Rmd",
+            "microbial-databases.Rmd",
+            "bacterial-genomes.Rmd",
+            "assembling-new-genomes.Rmd",
+            "finding-amrs.Rmd",
+            "kickstart-project-work.Rmd",
+            "scientific-communication.Rmd",
+            
+            ### PART Appendix ###
+            "appendix.Rmd",
+            "online-community.Rmd",
+            "About.Rmd"]
+new_session: yes
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter"
+output_dir: "docs"
