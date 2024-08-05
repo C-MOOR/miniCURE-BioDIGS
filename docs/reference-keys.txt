@@ -1,4 +1,3 @@
-fig:unnamed-chunk-1
 introduction
 c-moor-biodigs-overview
 the-scientific-process
@@ -8,8 +7,15 @@ microbial-databases
 bacterial-genomes
 assembling-new-genomes
 finding-amrs
+activity-1
+activity-2
 kickstart-project-work
 scientific-communication
 group-poster
 research-symposium
 online-community
+contributions-and-affiliations
+pacbio-preprocessing
+taxonomic-profiling
+gene-based-pathogen-identification
+get-data
