@@ -2,6 +2,10 @@ introduction
 c-moor-biodigs-overview
 the-scientific-process
 join-galaxy
+introduction-1
+instructions
+create-an-account-on-galaxy
+confirm-your-email-address
 scientific-literature
 microbial-databases
 bacterial-genomes

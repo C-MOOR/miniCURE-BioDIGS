@@ -35,6 +35,7 @@ We will analyze the ZymoBIOMICS [Gut Microbiome Standard](https://www.zymoresear
 #### Contributions and Affiliations {-}
 
 - Jennifer Kerr, Notre Dame of Maryland University
+- Rosa Alcazar, Clovis Community College
 - Frederick Tan, Johns Hopkins University
 - Based on "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition" ([GTN](https://gxy.io/GTN:T00393))
 
