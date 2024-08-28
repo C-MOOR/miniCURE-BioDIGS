@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Scientific Literature | BioDIGS miniCURE</title>
+  <title>Chapter 5 Taxonomy Profiling | BioDIGS miniCURE</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Scientific Literature | BioDIGS miniCURE" />
+  <meta property="og:title" content="Chapter 5 Taxonomy Profiling | BioDIGS miniCURE" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Scientific Literature | BioDIGS miniCURE" />
+  <meta name="twitter:title" content="Chapter 5 Taxonomy Profiling | BioDIGS miniCURE" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="join-galaxy.html"/>
-<link rel="next" href="microbial-databases.html"/>
+<link rel="prev" href="bacterial-genomes.html"/>
+<link rel="next" href="finding-amrs.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -151,9 +151,132 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="scientific-literature" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Scientific Literature<a href="scientific-literature.html#scientific-literature" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="taxonomy-profiling" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Taxonomy Profiling<a href="taxonomy-profiling.html#taxonomy-profiling" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="overview" class="section level3 unnumbered hasAnchor">
+<h3>Overview<a href="taxonomy-profiling.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="purpose" class="section level4 unnumbered hasAnchor">
+<h4>Purpose<a href="taxonomy-profiling.html#purpose" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="learning-objectives" class="section level4 unnumbered hasAnchor">
+<h4>Learning Objectives<a href="taxonomy-profiling.html#learning-objectives" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="introduction-1" class="section level4 unnumbered hasAnchor">
+<h4>Introduction<a href="taxonomy-profiling.html#introduction-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+</div>
+<div id="activity-1-trim-and-qc-reads" class="section level3 unnumbered hasAnchor">
+<h3><strong>Activity 1</strong> – Trim and QC Reads<a href="taxonomy-profiling.html#activity-1-trim-and-qc-reads" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Estimated time: 40 min</em></p>
+<div id="instructions" class="section level4 unnumbered hasAnchor">
+<h4>Instructions<a href="taxonomy-profiling.html#instructions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="import-dataset" class="section level5 unnumbered hasAnchor">
+<h5>1. Import dataset<a href="taxonomy-profiling.html#import-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<ul>
+<li>Open the <a href="https://usegalaxy.org/u/cutsort/h/gtn-pathogen-data" target="_blank">GTN Pathogen Detection from Nanopore</a> public history</li>
+<li>Click on <code>Import this history</code> and then <code>Copy History</code></li>
+</ul>
+<p><img src="taxonomy-profiling_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f6b21b1164_0_15.png"  /></p>
+<p>Confirm <code>Barcode10_Spike2.fastq.gz</code> exists in your history by clicking on the Home button in the top menu</p>
+<p><img src="taxonomy-profiling_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f6b21b1164_0_25.png"  /></p>
+</div>
+<div id="run-workflow" class="section level5 unnumbered hasAnchor">
+<h5>2. Run workflow<a href="taxonomy-profiling.html#run-workflow" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<ul>
+<li>Open the <a href="https://usegalaxy.org/u/cutsort/w/qc-reads" target="_blank">Trim and QC Reads</a> public workflow</li>
+<li>Click on <code>Run</code> and then <code>Run Workflow</code> on the <code>Barcode10_Spike2.fastq.gz</code> dataset</li>
+</ul>
+<p><img src="taxonomy-profiling_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f6b21b1164_0_35.png"  /></p>
+<p>Wait ~25 minutes as the NanoPlot, Porechop, and fastp jobs are scheduled, run, and complete</p>
+<p><img src="taxonomy-profiling_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f6b21b1164_0_39.png"  /></p>
+</div>
+<div id="view-results" class="section level5 unnumbered hasAnchor">
+<h5>3. View results<a href="taxonomy-profiling.html#view-results" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<ul>
+<li>Click on the Display icon (eyeball) next to the dataset tagged <code>NanoPlot-Original</code></li>
+<li>Compare the number of reads, length, quality, etc. with the report tagged <code>NanoPlot-QCed</code></li>
+</ul>
+<p><img src="taxonomy-profiling_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f6b21b1164_0_50.png"  /></p>
+</div>
+</div>
+<div id="questions" class="section level4 unnumbered hasAnchor">
+<h4>Questions<a href="taxonomy-profiling.html#questions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">1A.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="activity-2-taxonomy-profiling" class="section level3 unnumbered hasAnchor">
+<h3><strong>Activity 2</strong> – Taxonomy Profiling<a href="taxonomy-profiling.html#activity-2-taxonomy-profiling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><em>Estimated time: 50 min</em></p>
+<div id="instructions-1" class="section level4 unnumbered hasAnchor">
+<h4>Instructions<a href="taxonomy-profiling.html#instructions-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="run-workflow-1" class="section level5 unnumbered hasAnchor">
+<h5>1. Run workflow<a href="taxonomy-profiling.html#run-workflow-1" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<ul>
+<li>Open the <a href="https://usegalaxy.org/u/cutsort/w/taxonomy-profiling" target="_blank">Taxonomy Profiling</a> public workflow</li>
+<li>Click on <code>Run</code> and then <code>Run Workflow</code> with the following parameters
+<ul>
+<li>Dataset: <code>fastp on data 5: Read 1 output</code></li>
+<li>kraken_database: <code>Prebuilt Refseq indexes: PlusPF</code></li>
+</ul></li>
+<li>Wait ~35 minutes as the Kraken2, KrakenTools, and Krona jobs are scheduled, run, and complete</li>
+</ul>
+<p><img src="taxonomy-profiling_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f6b21b1164_0_57.png"  /></p>
+</div>
+<div id="view-results-1" class="section level5 unnumbered hasAnchor">
+<h5>2. View results<a href="taxonomy-profiling.html#view-results-1" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<ul>
+<li>Click on the Display icon (eyeball) next to the dataset tagged <code>taxonomy_profiling_visualization_krona_pie_chart</code></li>
+<li>Examine how many reads were classified as Salmonella, Escherichia coli, Homo sapiens, and Unclassified</li>
+</ul>
+<p><img src="taxonomy-profiling_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f6b21b1164_0_67.png"  /></p>
+</div>
+</div>
+<div id="questions-1" class="section level4 unnumbered hasAnchor">
+<h4>Questions<a href="taxonomy-profiling.html#questions-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">2A.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="footnotes" class="section level3 unnumbered hasAnchor">
+<h3>Footnotes<a href="taxonomy-profiling.html#footnotes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="resources" class="section level4 unnumbered hasAnchor">
+<h4>Resources<a href="taxonomy-profiling.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Google Doc</li>
+</ul>
+</div>
+<div id="contributions-and-affiliations" class="section level4 unnumbered hasAnchor">
+<h4>Contributions and Affiliations<a href="taxonomy-profiling.html#contributions-and-affiliations" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Jennifer Kerr, Notre Dame of Maryland University</li>
+<li>Frederick Tan, Johns Hopkins University</li>
+<li>Based on “Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition” (<a href="https://gxy.io/GTN:T00393">GTN</a>)</li>
+</ul>
+<p>Last Revised: August 2024</p>
 
+</div>
+</div>
 </div>
 <hr>
 <center> 
@@ -166,8 +289,8 @@
           </div>
         </div>
       </div>
-<a href="join-galaxy.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="microbial-databases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="bacterial-genomes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="finding-amrs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
