@@ -13,6 +13,11 @@ Databases such as the [NCBI Pathogen Detection Reference Gene Catalog](https://w
 Here we use the [ABRicate](https://github.com/tseemann/abricate) tool which can mass screen contigs for antimicrobial genes using a variety of databases including the NCBI database.
 A similar strategy can be used to screen for virulence factors using databases such as the [Virulence Factor Database](https://pubmed.gov/34850947) (VFDB).
 
+<img src="finding-amrs_files/figure-html//1pGSI4gxjeCLLakuwgSW0V7EuGT4F6av-CYMkqpcnlDE_g35f391192_00.png"  />
+
+[[slides](https://docs.google.com/presentation/d/1pGSI4gxjeCLLakuwgSW0V7EuGT4F6av-CYMkqpcnlDE){target="_blank"}]
+[[video](https://drive.google.com/file/d/11qoAymp6GNpW5ftRnLP7oj_nX2HzABzk){target="_blank"}]
+
 ### **Activity 1** -- Assemble Genomes {-}
 
 *Estimated time: 45 min*
@@ -35,6 +40,8 @@ A similar strategy can be used to screen for virulence factors using databases s
 <img src="finding-amrs_files/figure-html//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f6b21b1164_0_98.png"  />
 
 #### Questions {-}
+
+You can refer to [this completed history](https://usegalaxy.org/u/cutsort/h/finding-amrs-complete){target="_blank"} to answer these questions while you wait for your jobs to complete.
 
 | 1A. |
 |:-|
