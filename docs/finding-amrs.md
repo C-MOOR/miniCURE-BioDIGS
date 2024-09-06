@@ -43,7 +43,13 @@ A similar strategy can be used to screen for virulence factors using databases s
 
 You can refer to [this completed history](https://usegalaxy.org/u/cutsort/h/finding-amrs-complete){target="_blank"} to answer these questions while you wait for your jobs to complete.
 
-| 1A. |
+| 1A. How many contigs were assembled? |
+|:-|
+| <br> |
+
+<br>
+
+| 1B. Why did flye separate these in this way? How does flye decide to group them into this numbers of contigs? |
 |:-|
 | <br> |
 
@@ -71,7 +77,19 @@ You can refer to [this completed history](https://usegalaxy.org/u/cutsort/h/find
 
 #### Questions {-}
 
-| 2A. |
+| 2A. How many antibiotic resistance genes were found in the sample? |
+|:-|
+| <br> |
+
+<br>
+
+| 2B. Which antibiotic genes were found on which contigs? |
+|:-|
+| <br> |
+
+<br>
+
+| 2C. What antibiotics are associated with the identified antibiotic genes?  What is the target of the antibiotic(s) and mechanism of action? |
 |:-|
 | <br> |
 
@@ -88,4 +106,4 @@ You can refer to [this completed history](https://usegalaxy.org/u/cutsort/h/find
 - Frederick Tan, Johns Hopkins University
 - Based on "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition" ([GTN](https://gxy.io/GTN:T00393))
 
-Last Revised: August 2024
+Last Revised: September 2024

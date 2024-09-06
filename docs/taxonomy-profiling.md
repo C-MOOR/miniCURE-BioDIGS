@@ -74,7 +74,31 @@ Wait ~25 minutes as the NanoPlot, Porechop, and fastp jobs are scheduled, run, a
 
 #### Questions {-}
 
-| 2A. |
+| 2A. What is the percentage of unclassified for the sample? |
+|:-|
+| <br> |
+
+<br>
+
+| 2B. What are the kindgoms found for the sample? |
+|:-|
+| <br> |
+
+<br>
+
+| 2C. Where might the eukaryotic DNA come from? |
+|:-|
+| <br> |
+
+<br>
+
+| 2D. How is the diversity of *Proteobacteria* versus *Firmicutes* Phylum? |
+|:-|
+| <br> |
+
+<br>
+
+| 2E. How much *E. coli* and *Salmonella* are present in the sample? |
 |:-|
 | <br> |
 
@@ -91,4 +115,4 @@ Wait ~25 minutes as the NanoPlot, Porechop, and fastp jobs are scheduled, run, a
 - Frederick Tan, Johns Hopkins University
 - Based on "Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition" ([GTN](https://gxy.io/GTN:T00393))
 
-Last Revised: August 2024
+Last Revised: September 2024
