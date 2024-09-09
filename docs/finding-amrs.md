@@ -97,7 +97,7 @@ You can refer to [this completed history](https://usegalaxy.org/u/cutsort/h/find
 
 #### Resources {-}
 
-- Google Doc
+- [Google Doc](https://docs.google.com/document/d/181wPtZti_a4RMgKeQXuLPcNjAIrxg4DX)
 
 #### Contributions and Affiliations {-}
 

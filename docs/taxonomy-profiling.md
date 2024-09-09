@@ -106,7 +106,7 @@ Wait ~25 minutes as the NanoPlot, Porechop, and fastp jobs are scheduled, run, a
 
 #### Resources {-}
 
-- Google Doc
+- [Google Doc](https://docs.google.com/document/d/1r4Pr4f_An8A5sB4NGMG4sYU4vWVMQE-q)
 
 #### Contributions and Affiliations {-}
 

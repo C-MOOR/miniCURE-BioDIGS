@@ -107,7 +107,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1fH9s5OLcRF5meZtF
 
 #### Resources {-}
 
-- Google Doc
+- [Google Doc](https://docs.google.com/document/d/181wPtZti_a4RMgKeQXuLPcNjAIrxg4DX)
 
 #### Contributions and Affiliations {-}
 

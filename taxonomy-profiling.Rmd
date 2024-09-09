@@ -120,7 +120,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1fH9s5OLcRF5meZtF
 
 #### Resources {-}
 
-- Google Doc
+- [Google Doc](https://docs.google.com/document/d/1r4Pr4f_An8A5sB4NGMG4sYU4vWVMQE-q)
 
 #### Contributions and Affiliations {-}
 
