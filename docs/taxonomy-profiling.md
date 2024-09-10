@@ -10,7 +10,7 @@
 
 ### **Activity 1** -- Trim and QC Reads {-}
 
-*Estimated time: 40 min*
+*Estimated time: 40 min (~25 min computing)*
 
 #### Instructions {-}
 
@@ -45,13 +45,19 @@ Wait ~25 minutes as the NanoPlot, Porechop, and fastp jobs are scheduled, run, a
 
 #### Questions {-}
 
-| 1A. |
+You can refer to [this completed history](https://usegalaxy.org/u/cutsort/h/finding-amrs-complete){target="_blank"} to answer these questions while you wait for your jobs to complete.
+
+| 1A. How many megabases were sequenced?  What percentage was removed by the trimming step? |
+|:-|
+| <br> |
+
+| 1B. What are the median and mean read lengths?  Why is the mean is longer than the median? |
 |:-|
 | <br> |
 
 ### **Activity 2** -- Taxonomy Profiling {-}
 
-*Estimated time: 50 min*
+*Estimated time: 50 min (~25-35 min computing)*
 
 #### Instructions {-}
 

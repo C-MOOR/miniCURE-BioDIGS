@@ -22,7 +22,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1pGSI4gxjeCLLakuw
 
 ### **Activity 1** -- Assemble Genomes {-}
 
-*Estimated time: 45 min*
+*Estimated time: 45 min (~30 min computing)*
 
 #### Instructions {-}
 

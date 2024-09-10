@@ -20,7 +20,7 @@ A similar strategy can be used to screen for virulence factors using databases s
 
 ### **Activity 1** -- Assemble Genomes {-}
 
-*Estimated time: 45 min*
+*Estimated time: 45 min (~30 min computing)*
 
 #### Instructions {-}
 
