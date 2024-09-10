@@ -8,6 +8,11 @@
 
 #### Introduction {-}
 
+<img src="taxonomy-profiling_files/figure-html//1fN-efiepolGfj50pPk7DQ7yu-batzIRP6HZ2SSnxp-k_g35f391192_00.png"  />
+
+[[slides](https://docs.google.com/presentation/d/1fN-efiepolGfj50pPk7DQ7yu-batzIRP6HZ2SSnxp-k){target="_blank"}]
+[[video](https://drive.google.com/file/d/1C6iAjCESmyhvzjaH0txyBNYJ5ZiD5ys0){target="_blank"}]
+
 ### **Activity 1** -- Trim and QC Reads {-}
 
 *Estimated time: 40 min (~25 min computing)*
