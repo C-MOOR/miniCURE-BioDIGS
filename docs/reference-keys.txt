@@ -16,3 +16,4 @@ scientific-communication
 group-poster
 research-symposium
 online-community
+troubleshooting
