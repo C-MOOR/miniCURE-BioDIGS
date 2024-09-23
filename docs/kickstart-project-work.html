@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2024-09-19" />
+<meta name="date" content="2024-09-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -110,8 +110,8 @@
 <ul>
 <li class="chapter" data-level="" data-path="kickstart-project-work.html"><a href="kickstart-project-work.html#overview-2"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="" data-path="kickstart-project-work.html"><a href="kickstart-project-work.html#activity-1-get-data"><i class="fa fa-check"></i><strong>Activity 1</strong> – Get Data</a></li>
-<li class="chapter" data-level="" data-path="kickstart-project-work.html"><a href="kickstart-project-work.html#activity-2-taxonomy-profiling-1"><i class="fa fa-check"></i><strong>Activity 2</strong> – Taxonomy Profiling</a></li>
-<li class="chapter" data-level="" data-path="kickstart-project-work.html"><a href="kickstart-project-work.html#activity-3-finding-amrs"><i class="fa fa-check"></i><strong>Activity 3</strong> – Finding AMRs</a></li>
+<li class="chapter" data-level="" data-path="kickstart-project-work.html"><a href="kickstart-project-work.html#activity-2-adjust-for-pacbio-hifi"><i class="fa fa-check"></i><strong>Activity 2</strong> – Adjust for PacBio HiFi</a></li>
+<li class="chapter" data-level="" data-path="kickstart-project-work.html"><a href="kickstart-project-work.html#activity-3-interpret-results"><i class="fa fa-check"></i><strong>Activity 3</strong> – Interpret Results</a></li>
 <li class="chapter" data-level="" data-path="kickstart-project-work.html"><a href="kickstart-project-work.html#footnotes-2"><i class="fa fa-check"></i>Footnotes</a></li>
 </ul></li>
 <li class="part"><span><b>Community Analysis and Feedback</b></span></li>
@@ -122,7 +122,11 @@
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="online-community.html"><a href="online-community.html"><i class="fa fa-check"></i><b>A</b> Online Community</a></li>
-<li class="chapter" data-level="B" data-path="troubleshooting.html"><a href="troubleshooting.html"><i class="fa fa-check"></i><b>B</b> Troubleshooting</a></li>
+<li class="chapter" data-level="B" data-path="troubleshooting.html"><a href="troubleshooting.html"><i class="fa fa-check"></i><b>B</b> Troubleshooting</a>
+<ul>
+<li class="chapter" data-level="" data-path="troubleshooting.html"><a href="troubleshooting.html#share-galaxy-history"><i class="fa fa-check"></i>Share Galaxy History</a></li>
+<li class="chapter" data-level="" data-path="troubleshooting.html"><a href="troubleshooting.html#galaxy-fundamentals"><i class="fa fa-check"></i>Galaxy Fundamentals</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="divider"></li>
 <p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by:</a> </p>
@@ -168,22 +172,97 @@
 </div>
 <div id="introduction-4" class="section level4 unnumbered hasAnchor">
 <h4>Introduction<a href="kickstart-project-work.html#introduction-4" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>We will analyze the ZymoBIOMICS <a href="https://www.zymoresearch.com/products/zymobiomics-gut-microbiome-standard">Gut Microbiome Standard</a> which contains “21 different strains to mimic the human gut microbiome” and has been sequenced using PacBio Hi-Fi long read technology (<a href="https://www.ncbi.nlm.nih.gov/sra/?term=SRR13128014">SRR13128014</a>).</p>
+<p>In this lab we will kickstart your project work by analyzing one of the first BioDIGS long-read datasets from Baltimore soil sequenced using PacBio HiFi technology.
+Afterwards, you will be ready to analyze additional publicly available datasets and compare the results with other datasets of interest (e.g. managed vs wetland soil, corn soy vs cowpea diet).</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="27%" />
+<col width="44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Title</th>
+<th>Technology</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://biodigs.gdscn.org" target="_blank">BioDIGS Pilot</a></td>
+<td>PacBio</td>
+<td><a href="https://usegalaxy.org/u/cutsort/h/biodigs-pacbio-pilot-data" target="_blank">Galaxy History</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://pubmed.gov/38926353" target="_blank">Wetland</a></td>
+<td>Nanopore</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1119519" target="_blank">PRJNA1119519</a> (e.g. SRR29366187)</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.exeter.ac.uk/research/groups/geography/casper" target="_blank">Habitats</a></td>
+<td>Nanopore</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1112790" target="_blank">PRJNA1112790</a> (e.g. SRR29081438)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.zymoresearch.com/products/zymobiomics-gut-microbiome-standard" target="_blank">Zymo Gut Standard</a></td>
+<td>PacBio</td>
+<td><a href="https://usegalaxy.org/u/cutsort/h/zymo-gut-data" target="_blank">Galaxy History</a> (e.g. SRR13128014)</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.zymoresearch.com/collections/zymobiomics-microbial-community-standards/products/zymobiomics-fecal-reference-with-trumatrix-technology" target="_blank">Zymo Fecal Reference</a></td>
+<td>PacBio</td>
+<td><a href="https://usegalaxy.org/u/cutsort/h/zymo-fecal-data" target="_blank">Galaxy History</a></td>
+</tr>
+<tr class="odd">
+<td>Diet</td>
+<td>PacBio &amp; Nanopore</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1139951" target="_blank">PRJNA1139951</a> (e.g. SRR29980925)</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div id="activity-1-get-data" class="section level3 unnumbered hasAnchor">
 <h3><strong>Activity 1</strong> – Get Data<a href="kickstart-project-work.html#activity-1-get-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The BioDIGS PacBio pilot dataset is available as a Galaxy History.
+You can quickly import this dataset and any other dataset available as a Galaxy History by clicking on the link in the table above, clicking on <code>Import this history</code>, and then <code>Copy History</code> as you did in <a href="taxonomy-profiling.html#taxonomy-profiling">Taxonomy Profiling</a>.</p>
+<p>Additional datasets can be obtained from the NCBI <a href="https://www.ncbi.nlm.nih.gov/sra" target="_blank">Sequence Read Archive</a> which is the “largest publicly available repository of high throughput sequencing data”.
+After identifying an <code>SRR</code> number (see examples in the table above) you can import the dataset using the Galaxy tool named <code>Faster Download and Extract Reads in FASTQ</code>.</p>
+<div class="notice">
+<p><code>Faster Download and Extract Reads in FASTQ</code> will add three Collections to your history (Pair end, Single end, and Other).
+You can simplify this so that your dataset of interest appears as a new history entry by using the <code>Extract dataset</code> tool and selecting <code>The first dataset</code> from the <code>Single-end data</code> Collection.
+Learn more about Collections in <a href="troubleshooting.html#troubleshooting">Troubleshooting</a></p>
+</div>
+<p>Shown here is an example of importing <a href="https://www.ncbi.nlm.nih.gov/sra/?term=SRR13128014">SRR13128014</a> which is a PacBio HiFi dataset of the ZymoBIOMICS <a href="https://www.zymoresearch.com/products/zymobiomics-gut-microbiome-standard">Gut Microbiome Standard</a> that contains “21 different strains to mimic the human gut microbiome”.</p>
 <p><img src="kickstart-project-work_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f0aedcb71c_0_0.png"  /></p>
 </div>
-<div id="activity-2-taxonomy-profiling-1" class="section level3 unnumbered hasAnchor">
-<h3><strong>Activity 2</strong> – Taxonomy Profiling<a href="kickstart-project-work.html#activity-2-taxonomy-profiling-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><img src="kickstart-project-work_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f0aedcb71c_0_15.png"  /></p>
-<p><img src="kickstart-project-work_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f0aedcb71c_0_19.png"  /></p>
+<div id="activity-2-adjust-for-pacbio-hifi" class="section level3 unnumbered hasAnchor">
+<h3><strong>Activity 2</strong> – Adjust for PacBio HiFi<a href="kickstart-project-work.html#activity-2-adjust-for-pacbio-hifi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>PacBio <a href="https://www.pacb.com/technology/hifi-sequencing">HiFi</a> technology provides “highly accurate long-read sequencing”.
+The higher accuracy (99.9% on par with short reads and Sanger sequencing) allows for some simplification of the workflows in <a href="taxonomy-profiling.html#taxonomy-profiling">Taxonomy Profiling</a> and <a href="finding-amrs.html#finding-amrs">Finding AMRs</a> which were developed for Oxford Nanopore technology.
+These adjustments include:</p>
+<ul>
+<li>Skip the <code>Trim and QC Reads</code> workflow as <code>Porechop</code> adapter removal and <code>fastqp</code> quality trimming may be unnecessary/incorrect</li>
+<li>Run the <code>NanoPlot</code> tool directly to calculate summary statistics</li>
+<li>Run <code>ABRicate</code> directly on <code>flye_consensus_fasta</code> rather than on <code>sample_all_contigs</code> (produced by <code>medaka</code> which is designed to polish nanopore sequencing data)</li>
+</ul>
+<div class="notice">
+<p>Datasets close to and larger than 10 GB require increasingly more computational resources to analyze.
+In addition to taking longer to process, some tools such as <code>flye</code> may fail with errors such as <code>ERROR: Looks like the system ran out of memory</code>.
+For these situations, try using the <code>Split file</code> tool to create smaller subsets of data to analyze.
+See note above about extracting a dataset from a Collection.</p>
 </div>
-<div id="activity-3-finding-amrs" class="section level3 unnumbered hasAnchor">
-<h3><strong>Activity 3</strong> – Finding AMRs<a href="kickstart-project-work.html#activity-3-finding-amrs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="kickstart-project-work_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f0aedcb71c_0_19.png"  /></p>
 <p><img src="kickstart-project-work_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f0aedcb71c_0_54.png"  /></p>
 <p><img src="kickstart-project-work_files/figure-html/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g2f0aedcb71c_0_59.png"  /></p>
+</div>
+<div id="activity-3-interpret-results" class="section level3 unnumbered hasAnchor">
+<h3><strong>Activity 3</strong> – Interpret Results<a href="kickstart-project-work.html#activity-3-interpret-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
 <div id="footnotes-2" class="section level3 unnumbered hasAnchor">
 <h3>Footnotes<a href="kickstart-project-work.html#footnotes-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -199,9 +278,8 @@
 <li>Jennifer Kerr, Notre Dame of Maryland University</li>
 <li>Rosa Alcazar, Clovis Community College</li>
 <li>Frederick Tan, Johns Hopkins University</li>
-<li>Based on “Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition” (<a href="https://gxy.io/GTN:T00393">GTN</a>)</li>
 </ul>
-<p>Last Revised: August 2024</p>
+<p>Last Revised: September 2024</p>
 
 </div>
 </div>
