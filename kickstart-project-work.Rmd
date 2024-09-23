@@ -58,6 +58,8 @@ For these situations, try using the `Split file` tool to create smaller subsets 
 See note above about extracting a dataset from a Collection.
 :::
 
+Shown here are example results when analyzing a 10% subset of SRR13128014 for taxonomy profiling (92% reads classified), genome assembly (181 contigs up to 5.1 Mb), and antimicrobial resistance genes (14 hits including multiple tetracycline, vancomycin, and beta-lactam).
+
 ```{r, echo=FALSE, fig.alt=''}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA/edit#slide=id.g2f0aedcb71c_0_19")
 ```
@@ -70,7 +72,22 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1fH9s5OLcRF5meZtF
 ottrpal::include_slide("https://docs.google.com/presentation/d/1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA/edit#slide=id.g2f0aedcb71c_0_59")
 ```
 
-### **Activity 3** -- Interpret Results {-}
+### **Activity 3** -- Summarize Results {-}
+
+Create a report that summarizes your analysis for each dataset that describes:
+
+- Description -- Short title such as "wetland 1.2m depth" or "cowpea diet, age 25.56 months"
+- Dataset -- Source such as SRA accession code (`SRR`) and BioProject number (`PRJN`) or URL
+- Sequencing -- Technology, number of reads, number of bases, median read length, mean read length
+- Taxonomy -- Major classifications and amounts, percentage unclassified
+- Assembles -- Number of contigs, top five lengths
+- AMRs -- Resistance classes, which contigs contain hits
+
+Additional analyses to consider
+
+- Use ABRicate to screen additional databases such as CARD and VFDB
+- Use [NCBI BLAST](https://blast.ncbi.nlm.nih.gov){target="_blank"} to compare contigs to known genomes
+- Use [antiSMASH](https://antismash.secondarymetabolites.org){target="_blank"} to annotate secondary metabolite biosynthesis gene clusters
 
 ### Footnotes {-}
 
